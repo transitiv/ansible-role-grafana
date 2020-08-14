@@ -1,0 +1,5 @@
+---
+grafana_enterprise: false
+grafana_beta: false
+grafana_service_state: started
+grafana_service_enabled: true

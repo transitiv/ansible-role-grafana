@@ -1,0 +1,14 @@
+---
+- name: Verify
+  hosts: all
+  tasks:
+    - name: Ensure Grafana is installed
+      stat:
+        path: /usr/sbin/grafana-server
+      register: result
+      changed_when: false
+      failed_when: result.stat.isreg is not defined or not result.stat.isreg
+
+    - name: Ensure Grafana is running
+      command: pgrep -x grafana-server
+      changed_when: false

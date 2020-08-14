@@ -1,0 +1,14 @@
+---
+- name: Install Grafana package repository
+  yum_repository:
+    name: grafana
+    description: grafana
+    baseurl: https://packages.grafana.com/{{ grafana_enterprise|bool|ternary('enterprise', 'oss') }}/{{ grafana_beta|bool|ternary('rpm-beta', 'rpm') }}
+    gpgkey: https://packages.grafana.com/gpg.key
+    gpgcheck: yes
+
+- name: Install Grafana
+  yum:
+    name: "{{ grafana_enterprise|bool|ternary('grafana-enterprise', 'grafana') }}"
+    state: present
+    update_cache: yes

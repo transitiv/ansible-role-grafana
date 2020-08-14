@@ -1,0 +1,31 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: grafana
+  author: Adam James (atj)
+  description: Installs Grafana from the official package repositories.
+  company: Transitiv Technologies Ltd.
+  license: MIT
+  min_ansible_version: 2.4
+  travis_status_url: https://travis-ci.com/transitiv/ansible-role-grafana.svg?branch=master
+  issue_tracker_url: https://github.com/transitiv/ansible-role-grafana/issues
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+        - 8
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+        - focal
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+        - buster
+  galaxy_tags:
+    - grafana
+    - monitoring
