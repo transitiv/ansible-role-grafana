@@ -1,5 +1,6 @@
 ---
 language: python
+dist: focal
 services: docker
 
 env:
@@ -12,11 +13,6 @@ env:
     - MOLECULE_DISTRO: ubuntu1604
     - MOLECULE_DISTRO: debian10
     - MOLECULE_DISTRO: debian9
-
-before_install:
-  # Upgrade Docker to work with new versions of docker-py
-  # https://github.com/docker/docker-py/issues/2639
-  - curl https://gist.githubusercontent.com/geerlingguy/ce883ad4aec6a5f1187ef93bd338511e/raw/36612d28981d92863f839c5aefe5b7dd7193d6c6/travis-ci-docker-upgrade.sh | sudo bash
 
 install:
   - pip install molecule docker ansible-lint flake8
