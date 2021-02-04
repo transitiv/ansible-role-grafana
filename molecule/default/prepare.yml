@@ -10,10 +10,3 @@
           - procps
         update_cache: true
       when: ansible_os_family == 'Debian'
-    - name: Install apt-transport-https on older Debian/Ubuntu versions
-      apt:
-        name:
-          - apt-transport-https
-      when:
-        - ansible_os_family == 'Debian'
-        - ansible_distribution_release in ['stretch', 'xenial']
