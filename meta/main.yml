@@ -8,7 +8,7 @@ galaxy_info:
   company: Transitiv Technologies Ltd.
   license: MIT
   min_ansible_version: 2.4
-  travis_status_url: https://travis-ci.com/transitiv/ansible-role-grafana.svg?branch=master
+  travis_status_url: https://github.com/transitiv/ansible-role-grafana/workflows/CI/badge.svg
   issue_tracker_url: https://github.com/transitiv/ansible-role-grafana/issues
   platforms:
     - name: EL

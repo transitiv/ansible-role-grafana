@@ -1,6 +1,6 @@
 # Ansible Role: Grafana
 
-[![Build Status](https://travis-ci.com/transitiv/ansible-role-grafana.svg?branch=master)](https://travis-ci.com/transitiv/ansible-role-grafana)
+![Build Status](https://github.com/transitiv/ansible-role-grafana/workflows/CI/badge.svg)
 
 This role installs Grafana from the official package repositories on systems running Debian/Ubuntu and RHEL/CentOS.
 
@@ -45,4 +45,4 @@ This role is available under the terms of the MIT license.
 
 ## Author
 
-This role was created by [Transitiv Technologes Ltd.](https://www.transitiv.co.uk).
+This role was created by [Transitiv Technologes Ltd](https://www.transitiv.co.uk).
